@@ -13,10 +13,21 @@ public class RecursiveMethods {
 	 */
 	public static double geometricSum(int n) {
 		
-			// FIXME compute the geometric sum for the first n terms recursively
-			return 0;
+		if (n == 0) {
+			return 1/2;
+			
+		} else {
 		
-	}
+			double sum = Math.pow(2, n);
+			
+			return geometricSum(n-1) + sum; 
+		}
+		
+		
+			// FIXME compute the geometric sum for the first n terms recursively
+	}	
+		
+
 	
 	/**
 	 * @param xCenter                       x-coordinate of the center of the circle
@@ -29,6 +40,7 @@ public class RecursiveMethods {
 	 */
 	public static void circlesUponCircles(double xCenter, double yCenter, double radius,
 			double radiusMinimumDrawingThreshold) {
+		
 		
 		// FIXME
 	}
